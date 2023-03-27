@@ -1,5 +1,5 @@
 // How interactions by users 
-function clickCollaspse(){
+export function clickCollaspse(){
     const keyBtn = document.querySelector(".material-icons");
   
     if (keyBtn.innerText === "keyboard_arrow_down"){
@@ -7,4 +7,3 @@ function clickCollaspse(){
     } else { keyBtn.innerText = "keyboard_arrow_down"}
   }
 
-export default clickCollaspse;
