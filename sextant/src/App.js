@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+// This is what compents to display
 import './App.css';
+import clickCollaspse from './interaction';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
 
-export default App;
+export function Banner(){
+  return(
+    <div className="Banner">
+      <h1>Sextant</h1>
+      <button type="button" className="banner-collapse" onClick={clickCollaspse}>
+        <span className="material-icons banner-opened">
+          keyboard_arrow_down
+        </span>
+      </button>
+    </div>
+  );
+}
+
